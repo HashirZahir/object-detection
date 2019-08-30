@@ -1,0 +1,6 @@
+#! /usr/bin/env python3
+
+import detection_node.detection_node
+
+if __name__ == '__main__':
+    detection_node.detection_node.main()

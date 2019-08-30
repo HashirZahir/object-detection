@@ -1,0 +1,19 @@
+# darknet_object_detector_config
+
+classes_file: "config/darknet_resources/classes/coco.names" # list of labels/classes
+
+# Detection Thresholds and Image Properties
+conf_threshold: 0.5  # Confidence threshold
+nms_threshold: 0.2   # Non-maximum suppression threshold
+inp_width: 416       # Width of network's input image
+inp_height: 416      # Height of network's input image
+
+
+# Note, If nmsThreshold is set too low, e.g. 0.1, we might 
+# not detect overlapping objects of same or different classes. 
+# But if it is set too high e.g. 1, then we get multiple boxes for the same object.
+
+
+# Give the configuration and weight files for the model and load the network using them.
+model_configuration: "config/darknet_resources/cfg/yolov3.cfg"
+model_weights: "config/darknet_resources/weights/yolov3.weights"

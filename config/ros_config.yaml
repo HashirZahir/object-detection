@@ -1,0 +1,27 @@
+subscribers:
+
+    camera_2d:
+        topic: /camera/color/image_raw          # Image Topic
+
+    camera_3d:
+        topic: /camera/depth_registered/points  # PointCloud2 XYZRGB Topic
+
+    synchronized_queue_size: 20             # number of frames to consider synchronizing
+                                            # via ApproximateTimeSynchronizer
+
+    absoulte_synchronized_time_diff: 0.2    # max delay between timestamp of 
+                                            # image and pointcloud topics
+
+enable_debug_image: True
+
+publishers:
+
+    # debug_image only published if enable_debug_image is True
+    debug_image:
+        topic: /object_detector/debug/image_raw
+        queue_size: 1
+
+    detected_objects:
+        topic: /object_detector/detected
+        queue_size: 1
+

@@ -1,0 +1,5 @@
+object_detector_module: object_detectors.darknet_object_detector.DarknetObjectDetector  # module.class_name to be found dynamically
+                                                                                        # from object_detectors/object_detector_main.py
+
+object_detector_config: darknet_object_detector_config.yaml                             # any detector specfic configs to be loaded
+                                                                                        # format is up to user, optional

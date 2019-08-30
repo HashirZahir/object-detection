@@ -1,0 +1,1 @@
+Download pre-trained weights for yolov3 from wget https://pjreddie.com/media/files/yolov3.weights or yolov3-tiny weights from wget https://pjreddie.com/media/files/yolov3-tiny.weights. Ensure to update darknet_object_detection_config.yaml for which class file, yolo cfg file and yolo weights you will be using.
