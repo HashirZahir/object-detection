@@ -15,9 +15,9 @@ python >= 3.6
 opencv >= 3.4.2 (to run the demo yolov3 detector from cv2.dnn)
 
 
-## Real life demo
+## Real Life Demo
 
-(demo_images/object_detection_demo.png)
+<img src="/demo_images/object_detection_demo.png" alt="Object Detection Sample Output"/>
 
 Demo was performed using an Intel RealSense D435, which has an RGB camera as well as infrared cameras for distance estimation.
 
@@ -50,12 +50,12 @@ Otherwise, proceed to run your rosbag / connect your camera to stream the RGB an
 
 6. Monitor the output and ensure the configs and subscribers load successfully. Otherwise, recheck the values in `config/ros_config.yaml`
 
-   (demo_images/object_detection_demo_startup.png)
+   <img src="/demo_images/object_detection_demo_startup.png" alt="Object Detection Initialization messages"/>
 
 7. Detections should be coming in if the camera contains people, laptops, keyboards, smartphones, etc. The demo darknet yolov3
 detector can detect around 80 classes it can detect. 
-
-   (demo_images/object_detection_demo_output.png)
+   
+   <img src="/demo_images/object_detection_demo_output.png" alt="Object Detection Text output"/>
 
    Notice that there are some detections with a x:0,y:0,z:0 output. This is because even though the camera RGB and Pointcloud data
 was aligned, there was simply no pointcloud data at the place where the bench was detected and hence a 0,0,0 was returned instead.
